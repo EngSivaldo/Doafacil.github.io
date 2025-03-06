@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--
+    DOAFACIL by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <header>
+    <title>Login - DOAFACIL</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </header>
+
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt" style="background-color: cyan">
+        <h1 id="logo">
+          <a href="index.html">SITE <span> DOAFACIL</span></a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li class="current"><a href="index.html">BEM VINDO</a></li>
+            <li class="submenu">
+              <a href="#">Layouts</a>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="fazerDoacao.html">Fazer Doação</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="tiposDoacoes.html">Tipos de Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                  <a href="historicoDoacoes.html">Histórico de Doações</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="button primary">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <article id="main">
+        <header class="special container">
+          <span class="icon solid fa-laptop"></span>
+          <h2>Login to <strong>DOAFACIL</strong></h2>
+          <p>
+            Faça login para acessar sua conta e contribuir para causas
+            importantes.
+          </p>
+        </header>
+
+        <!-- Login Form -->
+        <section class="wrapper style4 container">
+          <div class="row gtr-150">
+            <div class="col-12 col-12-narrower">
+              <div class="content">
+                <section>
+                  <form id="login-form">
+                    <div class="row gtr-50">
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          name="username"
+                          id="username"
+                          placeholder="Username"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="password"
+                          name="password"
+                          id="password"
+                          placeholder="Password"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <ul class="actions special">
+                          <li>
+                            <input
+                              type="submit"
+                              value="Login"
+                              class="primary"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <p>
+                          Não tem uma conta?
+                          <a href="cadastro.html">Registre-se aqui</a>.
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!--botao de voltar-->
+          <div class="row gtr-50">
+            <div class="col-12">
+              <ul class="actions">
+                <li><a href="index.html" class="button">Voltar</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands circle fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-google-plus-g"
+              ><span class="label">Google+</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-dribbble"
+              ><span class="label">Dribbble</span></a
+            >
+          </li>
+        </ul>
+
+        <ul class="copyright">
+          <li>&copy; DOAFACIL</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollgress.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document
+        .getElementById("login-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          window.location.href = "campanhas.html";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+    DOAFACIL by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Fazer Doação - DOAFACIL</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      #header {
+        background-color: red; /* Define a cor de fundo como vermelha */
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt" style="background-color: cyan">
+        <h1 id="logo">
+          <a href="index.html">SITE <span> DOAFACIL</span></a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li class="current"><a href="index.html">BEM VINDO</a></li>
+            <li class="submenu">
+              <a href="#">MENU</a>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="fazerDoacao.html">Fazer Doação</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="tiposDoacoes.html">Tipos de Doações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                  <a href="historicoDoacoes.html">Histórico de Doações</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="button primary">Sign Up</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <article id="main">
+        <header class="special container">
+          <span class="icon solid fa-donate"></span>
+          <h2>Fazer uma <strong>Doação</strong></h2>
+          <p>Escolha o tipo de doação, o valor e o método de pagamento.</p>
+        </header>
+
+        <!-- Donation Form -->
+        <section class="wrapper style4 container">
+          <div class="content">
+            <form id="donation-form">
+              <!-- Campos do formulário -->
+              <div class="row gtr-50">
+                <div class="col-12">
+                  <label for="donation-type">Tipo de Doação</label>
+                  <select
+                    name="donation-type"
+                    id="donation-type"
+                    class="input"
+                    required
+                  >
+                    <option value="">Selecione o tipo de doação</option>
+                    <option value="educacao">Educação</option>
+                    <option value="saude">Saúde</option>
+                    <option value="meio-ambiente">Meio Ambiente</option>
+                    <option value="inclusao-social">Inclusão Social</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="donation-amount">Valor da Doação</label>
+                  <input
+                    type="number"
+                    name="donation-amount"
+                    id="donation-amount"
+                    class="input"
+                    placeholder="Digite o valor da doação"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="payment-method">Método de Pagamento</label>
+                  <select
+                    name="payment-method"
+                    id="payment-method"
+                    class="input"
+                    required
+                  >
+                    <option value="">Selecione o método de pagamento</option>
+                    <option value="cartao-credito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="paypal">PayPal</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <ul class="actions special">
+                    <li>
+                      <input type="submit" value="Doar" class="primary" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+            <script>
+              document
+                .getElementById("donation-form")
+                .addEventListener("submit", function (event) {
+                  event.preventDefault();
+                  window.location.href = "historicoDoacoes.html";
+                });
+            </script>
+          </div>
+        </section>
+      </article>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon brands circle fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-google-plus-g"
+              ><span class="label">Google+</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon brands circle fa-dribbble"
+              ><span class="label">Dribbble</span></a
+            >
+          </li>
+        </ul>
+
+        <ul class="copyright">
+          <li>&copy; DOAFACIL</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollgress.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
