@@ -59,7 +59,7 @@
 
                     <!-- Content -->
                     <div class="content">
-                        <form>
+                        <form id="register-form">
                             <div class="row gtr-50">
                                 <div class="col-6 col-12-mobile">
                                     <input type="text" name="name" placeholder="Nome" />
@@ -127,11 +127,3 @@
 	</body>
 </html>
 
-<script>
-    document
-      .getElementById("register-form")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
-        window.location.href = "msg.html";
-      });
-  </script>
