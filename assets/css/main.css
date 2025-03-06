@@ -3461,3 +3461,11 @@ body.index #main {
   background-color: blue;
   color: white;
 }
+
+.uniform-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Ajuste o valor conforme necessário */
+  max-height: 300px; /* Ajuste o valor conforme necessário */
+  object-fit: cover; /* Isso manterá a proporção da imagem */
+}
